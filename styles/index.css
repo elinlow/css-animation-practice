@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    padding: 40px;
+    height: 730px;
+    width: 75%;
+    background-color: rgb(252, 235, 166);
+    align-items: center;
+    flex-direction: column;
+    color: peru;
+    font-family: 'Gluten', bold;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.text {
+    font-size: 24px;
+}
+
+.text:hover {
+    color: red;
+    transition: all 0.4s ease-in-out;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+input {
+    border: none;
+    background:rgb(250, 241, 207);
+}
+
+button {
+    height: 25px;
+    width: 120px;
+    background-color:salmon;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: grey;
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.balloons-image {
+    width: 25%;
+    margin-top: 40px;
+    animation: imgRotate 3s ease infinite;
+    animation-direction: reverse;
+}
+
+@keyframes imgRotate {
+    0% {transform: scale(1) rotate(-5deg);}
+    25% {transform: scale(1) rotate(0deg);}
+    50% {transform: scale(1) rotate(5deg);}
+    75% {transform: scale(1) rotate(0deg);}
+    100% {transform: scale(1) rotate(-5deg);}
+}
